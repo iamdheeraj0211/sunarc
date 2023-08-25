@@ -1,0 +1,459 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <title>Sunarc Power</title>
+    <style>
+        .image-container {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: top;
+            margin-bottom: 100px;
+        
+            
+        }
+    .image-box:hover {
+            transform:translateZ(-2rem); /* Enlarge the container on hover */
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Add a shadow effect on hover */
+        }
+        .image-box {
+            flex-basis: 32%;
+            /* Adjust as needed for spacing */
+            text-align: center;
+            border-radius: 4px; /* Rounded corners */
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Shadow */
+            
+        }
+        
+    
+        .image-box img {
+            max-width: 100%;
+            height: 300px;
+            padding: 10px;
+        }
+    
+        .image-title {
+            font-weight: bold;
+            text-align: left;
+            padding: 10px;
+            color: #63B76C;
+            font-size: larger;
+        }
+    
+        .image-description {
+            color: #555;
+            text-align: left;
+        }
+
+        .slider-container {
+            width: 900px;
+            max-width: 600px;
+            max-height: 800px;
+            margin: 0 auto;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        /* Style for the images */
+        .slider-image {
+            width: 900px;
+            height: 600px;
+            display: none;
+        }
+        
+        /* Style for the caption */
+        .slider-caption {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            background-color: rgba(0, 0, 0, 0.7);
+            color: #fff;
+            padding: 10px;
+            text-align: center;
+            margin-bottom: 42px;
+            color: #63B76C;
+        }
+        
+        /* Style for the manual navigation buttons */
+        .slider-nav {
+            text-align: center;
+            margin-top: 10px;
+            z-index: 2;
+        }
+        
+        .slider-nav button {
+            background-color: #007BFF;
+            color: #fff;
+            border: none;
+            padding: 8px 16px;
+            cursor: pointer;
+            background-color: #63B76C;
+            border-radius: 2px;
+            
+        }
+
+    </style>
+    <link rel="icon" type="image/png" href="assets/img/logo.svg">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w==" crossorigin="anonymous" />
+    <link rel="stylesheet" href="assets/css/main.css">
+</head>
+
+<body style="font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif">
+    <div class="container">
+        <header style="background-color:#ebf2e7;position:fixed;">
+            <nav class="header__nav w-120">
+                <div class="header__logo">
+                    <!-- <img src="assets/img/logo.svg" alt="Logo"> -->
+                    <a href="#" class="menu__link active" style="font-size: 3rem;">SUNARC POWER</a>
+                </div>
+                <div class="header__nav__content">
+                    <div class="nav-close-icon"></div>
+                    <ul class="header__menu"style="font-size:2rem;">
+                        <li class="menu__item">
+                            <a href="#" class="menu__link active">Home</a>
+                        </li>
+                        <li class="menu__item">
+                            <a href="#services" class="menu__link">Services</a>
+                        </li>
+                        <li class="menu__item">
+                            <a href="#projects" class="menu__link">Projects</a>
+                        </li>
+                        <li class="menu__item">
+                            <a href="#about" class="menu__link">About Us</a>
+                        </li>
+                        <li class="menu__item">
+                            <a href="#contact" class="menu__link">Contact Us</a>
+                        </li>
+                    </ul>
+                   
+                </div>
+
+                <div class="hamburger-menu-wrap">
+                    <div class="hamburger-menu">
+                        <div class="line"></div>
+                        <div class="line"></div>
+                        <div class="line"></div>
+                    </div>
+                </div>
+            </nav>
+        </header>
+
+        <section class="hero w-120">
+            <div class="hero__content">
+                <div class="hero__text">
+                    <h1 class="hero__title" style="color: #63B76C; font-size:70px; border: #d5edce; text-align: center; text-shadow: #4f7942; font-weight: 900;">Harness the Power of Solar</h1>
+                    <p class="hero__description" style="text-align: center;">
+                        Switch to clean, renewable energy with our expert solar energy installation services.
+                    </p>
+                </div>
+                <div class="hero__img" style="clip-path: polygon(3% 100%,50% 100%,100% 100%,102% 0%);">
+                    <img src="assets/img/Solar-Hero.jpg" alt="" style="filter: blur(0px); ">
+                </div>
+            </div>
+        </section>
+
+        <section class="opportunities">
+            <div class="opportunities__img">
+                <img src="assets/img/leaf.png" alt="">
+            </div>
+            <div class="opportunities__content w-105">
+                <div class="opportunities__head">
+                    <h2 class="opportunities__title" style="color: #63B76C;">We are Building a Green World !</h2>
+                    <p class="opportunities__description">We are your trusted partner in solar energy installations. Learn how our expertise is contributing to a sustainable
+                    future by harnessing the power of the sun, reducing environmental impact, and creating a greener world.</p>
+                </div>
+                <div class="opportunities__body">
+                    <div class="opportunity">
+                        <img src="assets/img/opportunites/opportunity-1.svg" alt="Icon" class="opportunity__icon">
+                        <h4 class="opportunity__title">Powering Mankind</h4>
+                        <p class="opportunity__description">Solar energy installations provide a sustainable and abundant power source, meeting the energy needs of a growing global
+                        population</p>
+                    </div>
+
+                    <div class="opportunity active">
+                        <img src="assets/img/opportunites/opportunity-2.svg" alt="Icon" class="opportunity__icon">
+                        <h4 class="opportunity__title">Step to the Future</h4>
+                        <p class="opportunity__description">
+                            Solar technology reduces reliance on fossil fuels, mitigates climate change, and advances clean energy innovation.
+                        </p>
+                    </div>
+                    <div class="opportunity">
+                        <img src="assets/img/opportunites/opportunity-3.svg" alt="Icon" class="opportunity__icon">
+                        <h4 class="opportunity__title">Preserving the Green Environment
+                        </h4>
+                        <p class="opportunity__description">Solar power reduces pollution, habitat disruption, and resource depletion, ensuring a cleaner, more eco-friendly world.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="invest  w-120" id="services">
+                    <h2 class="works__title" style="color: #63B76C;align-items: center; margin-left: 40%; margin-bottom: 40px;margin-top: -60px;">Our Services</h2>
+
+                <div class="image-container">
+                    <div class="image-box">
+                        <div class="image-title">Customized Solar Panel Installation</div>
+
+                        <img src="assets/img/installation.jpg" alt="Image 1">
+                        <div class="" style="text-align: left;padding: 10px;color:rgb(91, 89, 89); ">At our solar panel installation company, we offer specialized solar panel installation services to meet your energy
+                        needs. Our team of professionals will work with you to install customized solar panels that are tailored to your
+                        specific energy consumption needs. We pride ourselves on our commitment to providing high-quality solar panel
+                        installation services that are both efficient and affordable.</div>
+                        <a href="tel:8805045349" style="color: #63B76C;text-align: left;">📞 Call Now
+                        </a>
+                    </div>
+                    <div class="image-box">
+                        <div class="image-title">Solar Maintenance and Repair</div>
+
+                        <img src="assets/img/service.jpg" alt="Image 2">
+                        <div class="" style="text-align: left;padding: 10px;color:rgb(91, 89, 89);">At our solar energy company, we offer comprehensive solar panel maintenance and repair services to ensure that your
+                        solar panel system continues to operate at peak efficiency. Our team of experienced solar panel technicians is dedicated
+                        to providing prompt and professional solar panel repair services, including panel cleaning, troubleshooting, and part
+                        replacement.</div>
+                        <a href="tel:8805045349" style="color: #63B76C;text-align: left;">📞 Call Now
+                        </a>
+                    </div>
+                    <div class="image-box">
+                        <div class="image-title">Solar Energy Consultation</div>
+
+                        <img src="assets/img/consult.jpg" alt="Image 3">
+                        <div class="" style="text-align: left;padding: 10px;color:rgb(91, 89, 89); ">At our solar energy company, we offer expert solar energy consultation services to help you determine the best solar
+                        energy solutions for your home or business. Our team of experienced solar energy professionals will work with you to
+                        evaluate your property, assess your energy needs, and provide you with a customized solar energy plan that meets your
+                        unique energy requirements.</div>
+                        <a href="tel:8805045349" style="color: #63B76C;text-align: left;">📞 Call Now
+                        </a>
+                    </div>
+                </div>
+        </section>
+
+        
+
+       <section id="projects">
+                    <h2 class="works__title"
+                        style="color: #63B76C;align-items: center; margin-left: 40%; margin-bottom: 60px;margin-top: -100px;">Our Projects
+                    </h2>
+
+        <div class="slider-container" >
+            <img class="slider-image" src="assets/img/projects/talegaon.jpeg" alt="Image 1">
+            <img class="slider-image" src="assets/img/projects/ambe.jpeg" alt="Image 2">
+            <img class="slider-image" src="assets/img/projects/control.jpeg" alt="Image 2">
+            <img class="slider-image" src="assets/img/projects/contrl1.jpeg" alt="Image 2">
+
+            <img class="slider-image" src="assets/img/projects/pir2.jpeg" alt="Image 3">
+            <img class="slider-image" src="assets/img/projects/pir1.jpeg" alt="Image 3">
+            <img class="slider-image" src="assets/img/projects/pir3.jpeg" alt="Image 3">
+            <img class="slider-image" src="assets/img/projects/akluj.jpeg" alt="Image 3">
+            <img class="slider-image" src="assets/img/projects/akluj1.jpeg" alt="Image 3">
+            <img class="slider-image" src="assets/img/projects/ak2.jpeg" alt="Image 3">
+            <img class="slider-image" src="assets/img/projects/mutha.jpeg" alt="Image 3">
+
+
+
+            <div class="slider-caption">5 KW at Swastik Perl Society Talegaon</div>
+            <div class="slider-caption">10 KW at Lakeshire Society Ambegaon</div>
+            <div class="slider-caption">10 KW at Lakeshire Society Ambegaon</div>
+            <div class="slider-caption">10 KW at Lakeshire Society Ambegaon</div>
+
+            <div class="slider-caption">25KW at Rice Mill Pirangut</div>
+            <div class="slider-caption">25KW at Rice Mill Pirangut</div>
+            <div class="slider-caption">25KW at Rice Mill Pirangut</div>
+            <div class="slider-caption">12KW at Shree Hospital Akluj</div>
+            <div class="slider-caption">12KW at Shree Hospital Akluj</div>
+            <div class="slider-caption">12KW at Shree Hospital Akluj</div>
+            <div class="slider-caption">1.5HP Pump at Mutha</div>
+
+            <div class="slider-nav" >
+                <button onclick="prevSlide()" >Previous</button>
+                <button onclick="nextSlide()">Next</button>
+            </div>
+        </div>
+        
+        <script>
+            let currentSlide = 0;
+            const slides = document.querySelectorAll('.slider-image');
+            const captions = document.querySelectorAll('.slider-caption');
+
+            function showSlide(index) {
+                if (index < 0) {
+                    currentSlide = slides.length - 1;
+                } else if (index >= slides.length) {
+                    currentSlide = 0;
+                }
+                slides.forEach((slide, i) => {
+                    if (i === currentSlide) {
+                        slide.style.display = 'block';
+                    } else {
+                        slide.style.display = 'none';
+                    }
+                });
+                captions.forEach((caption, i) => {
+                    if (i === currentSlide) {
+                        caption.style.display = 'block';
+                    } else {
+                        caption.style.display = 'none';
+                    }
+                });
+            }
+
+            function nextSlide() {
+                currentSlide++;
+                showSlide(currentSlide);
+            }
+
+            function prevSlide() {
+                currentSlide--;
+                showSlide(currentSlide);
+            }
+
+            // Automatic slide change (every 3 seconds)
+            setInterval(nextSlide, 3000);
+
+            // Show the initial slide
+            showSlide(currentSlide);
+        </script>
+       </section>
+<section class="how-is-works w-105" id="about">
+    <div class="works__content">
+        <div class="works__head">
+            <h2 class="works__title" style="margin-bottom: 40px;">About Us</h2>
+            <p class="works__content">At Sunarc Power, we are a leading solar energy installation company based in Pune,Maharashtra,
+                India. With our expertise and commitment to
+                sustainability, we strive to provide high-quality solar solutions to our clients. Our team of skilled
+                professionals
+                ensures seamless installation and exceptional customer service, making us the preferred choice for solar
+                energy
+                projects. Whether it's for residential, commercial, or industrial purposes, we tailor our services to
+                meet the unique
+                energy needs of each client. Join us in our mission to harness the power of the sun and contribute to a
+                greener future.
+            </p>
+        </div>
+    </div>
+
+
+</section>
+        <section class="farm-invest w-105" style="margin-top: 100px;" id="contact">
+            <h2 class="farm-invest__title">The future of <span>Green Energy</span> is Sunarc Power</h2>
+            
+           
+            <a href="tel:8805045349" class="btn btn__farm--invest">Call Us</a>
+            <a href="https://wa.me/8805045349" class="btn btn__farm--invest">WhatsApp Us</a>
+
+
+        </section>
+
+        <footer class="footer">
+            <div class="footer__body w-105">
+                <nav class="footer__nav"style="margin-left: 50px;">
+                    <ul class="footer_nav__menu">
+                        <li class="footer_nav__item">
+                            <h4 class="footer_nav__menu__title">COMPANY</h4>
+                        </li>
+                        <li class="footer_nav__item">
+                            <a href="#about" class="footer_nav__link">About Us</a>
+                        </li>
+                        <li class="footer_nav__item">
+                            <a href="#services" class="footer_nav__link">Services</a>
+                        </li>
+                        <li class="footer_nav__item">
+                            <a href="#projects" class="footer_nav__link">Projects</a>
+                        </li>
+                        <li class="footer_nav__item">
+                            <a href="#contact" class="footer_nav__link">Contact</a>
+                        </li>
+                        
+                    </ul>
+                    <ul class="footer_nav__menu"style="inline-size: 100px;">
+                        <li class="footer_nav__item">
+                        
+                            <h4 class="footer_nav__menu__title" >SOCIAL MEDIA</h4>
+                        </li>
+                            <a href="#" class="footer_nav__link"><img src="assets/img/linkedin.png" style="height: 40px;width: 40px;"></a>
+
+                            <a href="#" class="footer_nav__link"><img src="assets/img/twitter.png" style="height: 40px;width: 40px;"></a>
+
+                            <a href="#" class="footer_nav__link"><img src="assets/img/fb.png" style="height: 40px;width: 40px;"></a>
+                            <a href="#" class="footer_nav__link"><img src="assets/img/insta.png" style="height: 40px;width: 40px;"></a>
+
+                        </li>
+                        <li class="footer_nav__item"style="text-align: center;margin-left: -130px;">
+                            <h4 class="footer_nav__menu__title">ADDRESS</h4>
+                            <p class="footer_nav__link" style="text-align: center;">F.NO 2,Vrindavan Society,Ahriegaon,Warje,<br><span>Pune-411058</span></p>
+                        </li>
+                    </ul>
+                   
+                    
+                </nav>
+                <div class="footer__contact" style="margin-left: -300px;">
+                    <h5 class="footer__contact__title">Sunarc Power</h5>
+                    <span>Write email to us</span>
+                    <a href="mailto:info@zoufarm.com" class="email">info@sunarcpower.com</a>
+                    <a href="#" class="btn btn__signin">
+                        <i class="far fa-user"></i> Send Email
+                    </a>
+                </div>
+            </div>
+            <div class="footer__bottom">
+                <div class="footer__bottom__content w-105">
+                    <div class="footer__logo">
+                        <!-- <img src="assets/img/logo.svg" alt="Logo"> -->
+                    </div>
+                <p class="footer_copyright" id="currentYear"></p>
+                <p class="footer_copyright">Developed by - Dheeraj</p>
+
+                </div>
+                <img src="assets/img/mountain.png" alt="Mountain" class="footer_img">
+            </div>
+        </footer>
+    </div>
+    <script src="assets/js/main.js" type="module">
+        emailjs.init("iamdheeraj0211@gmail.com"); // Replace with your Email.js user ID
+
+            document.getElementById("contact-form").addEventListener("submit", function (event) {
+                event.preventDefault();
+                emailjs.sendForm("default_service", "template_tw67hhn", this)
+                    .then(function () {
+                        alert("Email sent successfully!");
+                    }, function (error) {
+                        alert("Oops! Something went wrong. Please try again later.");
+                    });
+            });
+            </script>
+            <script>
+            const currentYearElement = document.getElementById("currentYear");
+                const currentYear = new Date().getFullYear();
+                currentYearElement.textContent = `© Copyright ${currentYear}. Sunarc Power `;
+
+    </script>
+    <script>
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                anchor.addEventListener('click', function (e) {
+                    e.preventDefault();
+
+                    const targetId = this.getAttribute('href').substring(1); // Remove the "#" character
+                    const targetElement = document.getElementById(targetId);
+
+                    if (targetElement) {
+                        const offset = targetElement.getBoundingClientRect().top - window.innerHeight / 2;
+
+                        window.scrollTo({
+                            top: offset,
+                            behavior: 'smooth'
+                        });
+                    }
+                });
+            });
+
+    </script>
+
+</body>
+
+</html>
