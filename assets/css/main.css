@@ -71,17 +71,19 @@ header {
   top: 0;
   width: 100%;
   z-index: 2;
+  background-color:#FCF6F5;
+  height: 7.5rem;
 }
 
 .header__nav {
-  padding: 2rem 1.5rem;
+  padding: 0.5rem 1.5rem;
   margin: auto;
   display: flex;
   align-items: center;
 }
 
 .header__logo {
-  flex: 2;
+  flex: 0 0 auto;
 }
 
 .header__logo img {
@@ -225,7 +227,7 @@ header {
 /*End Hero */
 .hero {
   margin: auto;
-  height: 100vh;
+  height: 70rem;
 }
 
 .hero__content {
@@ -377,7 +379,7 @@ header {
 }
 
 .opportunity:hover {
-  transform: translateY(-2rem);
+  transform:translateY(-2rem);
 }
 
 .opportunity__icon {
@@ -772,7 +774,7 @@ header {
   text-align: center;
   background-color: #ffffff;
   filter: drop-shadow(0 0 0.75rem rgba(27, 31, 35, 0.15));
-  margin-bottom: 10rem;
+  margin-bottom: 4rem;
 }
 
 .farm-invest__title {

@@ -108,12 +108,14 @@
 
 <body style="font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif">
     <div class="container">
-        <header style="background-color:#ebf2e7;position:fixed;">
+        <header style="position:fixed;">
             <nav class="header__nav w-120">
                 <div class="header__logo">
                     <img src="assets/img/sunarc.png" alt="Logo" style="max-height:7rem;max-width:7rem;">
-                    <!-- <a href="#" class="menu__link active" style="font-size: 3rem;">SUNARC POWER</a> -->
+                    <!-- <a href="#" class="menu__link active" style="font-size: 3rem;vertical-align: middle;">SUNARC POWER</a> -->
                 </div>
+                    <!-- <img src="assets/img/sunarc.png" alt="Logo" style="max-height:7rem;max-width:7rem;"> -->
+                    <a href="#" class="menu__link active" style="color: #66BB6A; font-size: 3rem;vertical-align: middle;margin-right: 4rem;margin-left: 1rem;flex: 0 0 auto;">SUNARC POWER</a>
                 <div class="header__nav__content">
                     <div class="nav-close-icon"></div>
                     <ul class="header__menu"style="font-size:2rem;">
@@ -135,27 +137,19 @@
                     </ul>
                    
                 </div>
-
-                <div class="hamburger-menu-wrap">
-                    <div class="hamburger-menu">
-                        <div class="line"></div>
-                        <div class="line"></div>
-                        <div class="line"></div>
-                    </div>
-                </div>
             </nav>
         </header>
 
         <section class="hero w-120">
             <div class="hero__content">
                 <div class="hero__text">
-                    <h1 class="hero__title" style="color:#66BB6A; font-size:70px; border: #d5edce; text-align: center; text-shadow: #4f7942; font-weight: 900;">Harness the Power of Solar</h1>
+                    <h1 class="hero__title" style="color:#66BB6A; font-size:7rem; border: #d5edce; text-align: center; text-shadow: #4f7942; font-weight: 900;">Harness the Power of Solar</h1>
                     <p class="hero__description" style="text-align: center;">
                         Switch to clean, renewable energy with our expert solar energy installation services.
                     </p>
                 </div>
-                <div class="hero__img" style="clip-path: polygon(3% 100%,50% 100%,100% 100%,102% 0%);">
-                    <img src="assets/img/Solar-Hero.jpg" alt="" style="filter: blur(0px); ">
+                <div class="hero__img" style="clip-path: polygon(3% 100%,50% 100%,100% 100%,102% 0%);flex: 0 0 auto;">
+                    <img src="assets/img/Solar-Hero.jpg" alt="land" style="filter: blur(0px); ">
                 </div>
             </div>
         </section>
@@ -361,18 +355,23 @@
 
         </section>
 
-        <footer class="footer " style="margin-top: -5rem;align-items: center;display: flexbox;">
+        <footer class="footer " style="align-items: center;display: flexbox;">
             <div class="">
-                <nav class="w-120" style="text-align: center;">
                     <ul style="text-align: center;margin-bottom: 1rem;color:#66BB6A;">
-                            <h4 class="">COMPANY</h4>
+                            <h4 class="">SUNARC POWER</h4>
                             <a href="#about" class="footer_nav__link">About Us</a>
                             <a href="#services" class="footer_nav__link">Services</a>
                             <a href="#projects" class="footer_nav__link">Projects</a>
                             <a href="#contact" class="footer_nav__link">Contact</a>
                         
                     </ul>
-                    <ul class=""style="text-align: center;margin-bottom:1rem;color:#66BB6A;margin-left: 2rem;">
+                    <ul class="" style="text-align: center;color:#66BB6A;">
+                    
+                        <li class="">
+                            <h4 class="">ADDRESS</h4>
+                            <p style="color:#607D8B;margin-bottom: 1rem;">F.NO 2,Vrindavan
+                                Society,Ahriegaon,Warje,<br><span>Pune-411058</span></p></li>
+                    <ul class=""style="text-align: center;margin-bottom:1rem;color:#66BB6A;">
                         
                             <h4 class="">SOCIAL MEDIA</h4>
                     
@@ -383,11 +382,7 @@
                             <a href="#" class=""><img src="assets/img/fb.png" style="height: 3rem;width: 3rem;"></a>
                             <a href="#" class=""><img src="assets/img/insta.png" style="height: 3rem;width: 3rem;"></a>
                     </ul>
-                    <ul class="" style="text-align: center;color:#66BB6A;;margin-left: 1rem;">
-
-                        <li class="">
-                            <h4 class="">ADDRESS</h4>
-                            <p style="color: #555;margin-bottom: 2rem;">F.NO 2,Vrindavan Society,Ahriegaon,Warje,<br><span>Pune-411058</span></p>
+                    
                             <p style="color:#f7f7f7;border-bottom: 2px solid;"></p>
                         </li>
                     </ul>
@@ -398,11 +393,9 @@
             </div>
             <div class="footer__bottom" style="margin-top: -4rem;">
                 <div class="footer__bottom__content w-105">
-                    <div class="footer__logo">
-                        <!-- <img src="assets/img/logo.svg" alt="Logo"> -->
-                    </div>
+        
                 <p class="footer_copyright" id="currentYear"></p>
-                <a href="https://www.instagram.com/iamdhiiraj/" class="footer_nav__link" >Developed by - Dheeraj</a>
+                <a href="https://www.instagram.com/iamdhiiraj/" class="footer_copyright" style="font-size: 1.2rem;margin-top: -4rem;">Developed by - Dheeraj</a>
 
 
                 </div>
@@ -410,19 +403,7 @@
             </div>
         </footer>
     </div>
-    <script src="assets/js/main.js" type="module">
-        emailjs.init("iamdheeraj0211@gmail.com"); // Replace with your Email.js user ID
-
-            document.getElementById("contact-form").addEventListener("submit", function (event) {
-                event.preventDefault();
-                emailjs.sendForm("default_service", "template_tw67hhn", this)
-                    .then(function () {
-                        alert("Email sent successfully!");
-                    }, function (error) {
-                        alert("Oops! Something went wrong. Please try again later.");
-                    });
-            });
-            </script>
+  
             <script>
             const currentYearElement = document.getElementById("currentYear");
                 const currentYear = new Date().getFullYear();
