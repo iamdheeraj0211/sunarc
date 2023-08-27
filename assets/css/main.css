@@ -226,7 +226,7 @@ header {
 /*End Header */
 /*End Hero */
 .hero {
-  margin: auto;
+  /* margin: auto; */
   height: 70rem;
 }
 
@@ -773,7 +773,7 @@ header {
   padding: 5rem 2.5rem;
   text-align: center;
   background-color: #ffffff;
-  filter: drop-shadow(0 0 0.75rem rgba(27, 31, 35, 0.15));
+  /* filter: drop-shadow(0 0 0.75rem rgba(27, 31, 35, 0.15)); */
   margin-bottom: 4rem;
 }
 
@@ -883,23 +883,26 @@ header {
 .footer__contact {
   flex: 1 0 28rem;
   background-color: #66BB6A;
-  padding: 5rem 5rem 10rem;
+  padding: 2rem 5rem 0rem;
   color: #ffffff;
   display: flex;
   align-items: center;
-  flex-direction: column;
+  flex-direction:column;
+  margin-top: 2rem;
 }
 
 .footer__contact > * {
-  max-width: 16rem;
+  max-width: 36rem;
 }
 
 .footer__contact__title {
   margin-bottom: 1.5rem;
+  text-align: center;
 }
 
 .email {
   color: #ffffff;
+  text-align: center;
 }
 
 .btn__signin {
