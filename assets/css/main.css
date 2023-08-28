@@ -9,10 +9,18 @@
 
 html {
   font-size: 10px;
+ 
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+      
 }
 
 body {
-  font-family: 'Chivo', sans-serif;
+  /* font-family: 'Chivo', sans-serif; */
+  font-family: "Avant Garde", Avantgarde, "Century Gothic", CenturyGothic, "AppleGothic", sans-serif;
   font-size: 1.6rem;
   color: #000000;
 }
@@ -49,10 +57,15 @@ section {
   padding: 0 1.5rem;
   max-width: 144rem;
   margin: 0 auto;
+  overflow:auto;
+
+  min-height: 100vh;
+  
 }
 
 .w-120 {
   max-width: 120rem;
+  
 }
 
 .w-105 {
@@ -71,7 +84,7 @@ header {
   top: 0;
   width: 100%;
   z-index: 2;
-  background-color:#FCF6F5;
+  background-color: rgba(181, 121, 25, 0.407);
   height: 7.5rem;
 }
 
@@ -83,7 +96,10 @@ header {
 }
 
 .header__logo {
+  display: flex;
   flex: 0 0 auto;
+  align-items: center;
+  font-weight: 400;
 }
 
 .header__logo img {
@@ -112,11 +128,11 @@ header {
 }
 
 .menu__link:hover {
-  color: #66BB6A;
+  color:#0baf13;
 }
 
 .menu__link.active {
-  color: #66BB6A;
+  color:#0baf13;
   font-weight: bold;
 }
 
@@ -192,7 +208,7 @@ header {
 }
 
 .hamburger-menu .line {
-  background-color: #66BB6A;
+  background-color:#0baf13;
   height: .3rem;
   width: 100%;
   transition: all 0.3s;
@@ -241,8 +257,42 @@ header {
 
 .hero__title {
   font-size: 4.6rem;
-}
+  font-family: "Avant Garde", Avantgarde, "Century Gothic", CenturyGothic, "AppleGothic", sans-serif;
+    font-size: 6rem;
+    text-align: center;
+    text-transform: uppercase;
+    text-rendering: optimizeLegibility;
 
+          color: #f2db0c;
+            letter-spacing: .1em;
+            text-shadow:
+              0 -1px 0 #fff,
+              0 1px 0 #2e2e2e,
+              0 2px 0 #2c2c2c,
+              0 3px 0 #2a2a2a,
+              0 4px 0 #282828,
+              0 5px 0 #262626,
+              0 6px 0 #242424,
+              0 7px 0 #222,
+              0 8px 0 #202020,
+              0 9px 0 #1e1e1e,
+              0 10px 0 #1c1c1c,
+              0 11px 0 #1a1a1a,
+              0 12px 0 #181818,
+              0 13px 0 #161616,
+              0 14px 0 #141414,
+              0 15px 0 #121212,
+              0 22px 30px rgba(0, 0, 0, 0.9);
+          }
+          
+          &.insetshadow {
+            color: #202020;
+            background-color: #2d2d2d;
+            letter-spacing: .1em;
+            text-shadow:
+              -1px -1px 1px #111,
+              2px 2px 1px #363636;
+}
 .hero__description {
   font-size: 1.8rem;
   margin: 2.5rem 0 5rem;
@@ -330,9 +380,8 @@ header {
   margin: auto;
   display: flex;
   flex-direction: column;
-  padding-bottom: 5rem;
-  border-bottom: 2px solid #f7f7f7;
-  margin-bottom: 4rem;
+  /* padding-bottom: 5rem; */
+  margin-bottom: 2rem;
 }
 
 .opportunities__head {
@@ -356,14 +405,15 @@ header {
 .opportunities__body {
   display: flex;
   flex-wrap: wrap;
-  grid-gap: 2.5rem;
+  grid-gap: 1rem;
   align-self: baseline;
 }
 
 .opportunity {
-  width: 30%;
+  width: 32%;
   background-color: #ffffff;
-  border-radius: .5rem;
+  background-color: rgba(0, 0, 0, 0.1);
+  /* border-radius: .5rem; */
   filter: drop-shadow(0 0 0.75rem rgba(27, 31, 35, 0.15));
   padding: 5rem 2.5rem 2.5rem;
   transition: all 0.3s ease-out;
@@ -371,15 +421,18 @@ header {
 
 .opportunity.active {
   background-color: #66BB6A;
+  background-color: rgba(0, 0, 0, 0.1);
 }
 
 .opportunity.active .opportunity__title,
 .opportunity.active .opportunity__description {
   color: #ffffff;
+  background-color: rgba(0, 0, 0, 0.2);
 }
 
 .opportunity:hover {
-  transform:translateY(-2rem);
+  /* transform:translateY(-2rem); */
+  background-color:rgba(0, 0, 0, 0.2); ;
 }
 
 .opportunity__icon {
@@ -522,11 +575,15 @@ header {
 /*End Invest*/
 /*End How Is Works*/
 .how-is-works {
-  background: url("../img/how-is-works-bg.png") no-repeat;
+  /* background: url("../img/how-is-works-bg.png") no-repeat; */
   background-color: #66BB6A;
+  background-color: rgba(0, 0, 0, 0.1);
   margin: auto;
+  
 }
-
+.how-is-works:hover{
+  background-color: rgba(0, 0, 0, 0.2);;
+}
 .works__content {
   max-width: 70rem;
   margin: auto;
@@ -772,17 +829,22 @@ header {
   margin: auto;
   padding: 5rem 2.5rem;
   text-align: center;
-  background-color: #ffffff;
+  /* background-color: #ffffff; */
+  background-color: rgba(0, 0, 0, 0.1);
   /* filter: drop-shadow(0 0 0.75rem rgba(27, 31, 35, 0.15)); */
   margin-bottom: 4rem;
+}
+.farm-invest:hover{
+  background-color: rgba(0, 0, 0, 0.2);
 }
 
 .farm-invest__title {
   font-size: 3.6rem;
+  color: #ffffff;
 }
 
 .farm-invest__title span {
-  color: #66BB6A;
+  color:#0baf13;;
 }
 
 .btn__farm--invest {
@@ -847,7 +909,7 @@ header {
   grid-gap: 2.5rem;
   align-items: baseline;
   padding-bottom: 5rem;
-  border-bottom: 2px solid #f7f7f7;
+  /* border-bottom: 2px solid #f7f7f7; */
 }
 
 .footer__nav {
@@ -872,7 +934,7 @@ header {
 
 .footer_nav__link {
   font-size: 1.6rem;
-  color: #607D8B;
+  color:#263238;
   transition: .2s all;
 }
 
@@ -882,13 +944,15 @@ header {
 
 .footer__contact {
   flex: 1 0 28rem;
-  background-color: #66BB6A;
+  /* background-color: #66BB6A; */
+  background-color: rgba(0, 0, 0, 0);
   padding: 2rem 5rem 0rem;
   color: #ffffff;
   display: flex;
   align-items: center;
   flex-direction:column;
-  margin-top: 2rem;
+  margin-top: 0rem;
+  margin-bottom: -2.5rem;
 }
 
 .footer__contact > * {
@@ -898,6 +962,7 @@ header {
 .footer__contact__title {
   margin-bottom: 1.5rem;
   text-align: center;
+  color:#263238;
 }
 
 .email {
@@ -907,8 +972,8 @@ header {
 
 .btn__signin {
   margin-top: 1.5rem;
-  border: 1px solid #ffffff;
-  color: #66BB6A;
+  /* border: 1px solid #263238; */
+  color:#0baf13;
   /*
     Button hover effect resource
     https://codepen.io/alticreation/pen/zBZwOP
@@ -927,7 +992,7 @@ header {
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: #ffffff;
+  background-color:rgba(0, 0, 0, 0.1);;
   z-index: -2;
 }
 
@@ -938,13 +1003,13 @@ header {
   left: 0;
   width: 0%;
   height: 100%;
-  background-color: #66BB6A;
+  background-color:#0baf13;
   transition: all .3s;
   z-index: -1;
 }
 
 .btn__signin:hover {
-  color: #ffffff;
+  color:#000000;
 }
 
 .btn__signin:hover:before {
@@ -961,7 +1026,7 @@ header {
 }
 
 .footer_copyright {
-  color: #607D8B;
+  color: #263238;
   font-size: 1.4rem;
   text-align: center;
 }
@@ -1176,3 +1241,51 @@ header {
   /*End Farm Invest*/
 }
 /*# sourceMappingURL=main.css.map */
+
+@import "compass/css3";
+
+@import url(https://fonts.googleapis.com/css?family=Lato:700,900);
+
+
+/**
+ * A Long-shadow mixin, guaranteed to make your Dribbble shots 11% cooler
+ * @param  string  $color_a  The darkest colour (closest the object)
+ * @param  string  $color_b  The lightest colour (often the background colour)
+ * @param  int     $stepnum  Number of steps
+ * @param  int     $opacity  The opacity of the blend
+ * @return list         	   Returns a list ready to drop into 'box-shadow' or text-shadow
+ */
+@function longshadow($color_a, $color_b, $stepnum, $opacity: 1) {
+
+  $gradient_steps: null;
+
+  @for $i from 1 through $stepnum {
+
+    $weight: (($i - 1) / $stepnum ) * 100;
+
+    $colour_mix: mix($color_b, rgba($color_a, $opacity), $weight);
+
+    $seperator: null;
+
+    @if($i !=$stepnum) {
+      $seperator: #{','};
+    }
+
+    $gradient_steps: append(#{$gradient_steps}, #{$i}px #{$i}px $colour_mix $seperator );
+
+  }
+
+  @return $gradient_steps;
+
+}
+
+
+.text-longshadow {
+  color: #fff;
+  font-size: 8rem;
+  line-height: 8rem;
+  font-family: "lato", sans-serif;
+  font-weight: 900;
+  text-align: center;
+  @include text-shadow(longshadow(darken($bg, 30%), $bg, 50, 0.5));
+}

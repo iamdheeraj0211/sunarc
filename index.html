@@ -41,12 +41,13 @@
             font-weight: bold;
             text-align: left;
             padding: 10px;
-            color:#66BB6A;
+            color:#263238;
             font-size: larger;
+            padding-left: 0%;
         }
     
         .image-description {
-            color: #555;
+            color:#263238;
             text-align: left;
         }
 
@@ -79,7 +80,7 @@
             padding: 10px;
             text-align: center;
             margin: bottom 2rem;;
-            color:#66BB6A;
+            color: #0baf13;
         }
         
         /* Style for the manual navigation buttons */
@@ -95,27 +96,45 @@
             border: none;
             padding: 8px 16px;
             cursor: pointer;
-            background-color: #66BB6A;
+            background-color: #0baf13;
             border-radius: 2px;
             
         }
+        .background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('your-background-image.jpg'); /* Set your background image here */
+  background-image: repeating-linear-gradient(135deg, rgba(0, 0, 0, 0.04) 0px, rgba(0, 0, 0, 0.04) 2px, transparent 2px, transparent 4px), linear-gradient(135deg, rgb(252, 247, 9), rgb(229, 130, 102));
+
+    background-size: cover; /* Adjust the background size as needed */
+    z-index: -1; /* Place it behind other content */
+}
 
     </style>
-    <link rel="icon" type="image/png" href="assets/img/logo.svg">
+    <!-- <link rel="icon" type="image/png" href="assets/img/logo.svg"> -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w==" crossorigin="anonymous" />
     <link rel="stylesheet" href="assets/css/main.css">
 </head>
 
 <body style="font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif">
+    <div class="background"></div>
     <div class="container">
         <header style="position:fixed;">
             <nav class="header__nav w-120">
                 <div class="header__logo">
                     <img src="assets/img/sunarc.png" alt="Logo" style="max-height:7rem;max-width:7rem;">
+                    <a href="#" class="header__logo" style="color: #0baf13; font-size: 3rem;margin-left: 0.5rem;">SUNARC
+                        POWER</a>
+                    
+
                     <!-- <a href="#" class="menu__link active" style="font-size: 3rem;vertical-align: middle;">SUNARC POWER</a> -->
                 </div>
+                <!-- <div>
+               </div> -->
                     <!-- <img src="assets/img/sunarc.png" alt="Logo" style="max-height:7rem;max-width:7rem;"> -->
-                    <a href="#" class="menu__link active" style="color: #66BB6A; font-size: 3rem;vertical-align: middle;margin-left: 1rem;flex: 0 0 auto;">SUNARC POWER</a>
                 <div class="header__nav__content" style="margin-left: 10rem;">
                     <div class="nav-close-icon"></div>
                     <ul class="header__menu"style="font-size:2rem;">
@@ -137,7 +156,7 @@
                     </ul>
                    
                 </div>
-                <div class="hamburger-menu-wrap" style="flex: 0 0 auto;">
+                <div class="hamburger-menu-wrap">
                     <div class="hamburger-menu">
                         <div class="line"></div>
                         <div class="line"></div>
@@ -150,7 +169,7 @@
         <section class="hero w-120">
             <div class="hero__content">
                 <div class="hero__text">
-                    <h1 class="hero__title" style="color:#66BB6A; font-size:7rem; border: #d5edce; text-align: center; text-shadow: #4f7942; font-weight: 900;">Harness the Power of Solar</h1>
+                    <h1 class="text-longshadow">Harness the Power of Solar</h1>
                     <p class="hero__description" style="text-align: center;">
                         Switch to clean, renewable energy with our expert solar energy installation services.
                     </p>
@@ -162,12 +181,10 @@
         </section>
 
         <section class="opportunities">
-            <div class="opportunities__img">
-                <img src="assets/img/leaf.png" alt="">
-            </div>
+
             <div class="opportunities__content w-105">
                 <div class="opportunities__head">
-                    <h2 class="opportunities__title" style="color:#66BB6A;">We are Building a Green World !</h2>
+                    <h2 class="opportunities__title" style="color:#fff;">We are Building a <span style="color: #0baf13;">Green World !</span></h2>
                     <p class="opportunities__description">We are your trusted partner in solar energy installations. Learn how our expertise is contributing to a sustainable
                     future by harnessing the power of the sun, reducing environmental impact, and creating a greener world.</p>
                 </div>
@@ -179,7 +196,7 @@
                         population</p>
                     </div>
 
-                    <div class="opportunity active">
+                    <div class="opportunity">
                         <img src="assets/img/opportunites/opportunity-2.svg" alt="Icon" class="opportunity__icon">
                         <h4 class="opportunity__title">Step to the Future</h4>
                         <p class="opportunity__description">
@@ -197,9 +214,9 @@
             </div>
         </section>
 
-        <section id="services" class="opportunities__content w-120" style="margin-top: -8rem;">
+        <section  class="opportunities__content w-105"id="services" style="margin-top: -8rem;">
             <div class="opportunities__head">
-                    <h2 class="opportunities__title" style="color:#66BB6A;">Our Services</h2>
+                    <h2 class="opportunities__title" style="color:#f7f7f7">Our Services</h2>
                     </div>
 
                 <div class="opportunities__body"style="margin-top:-6rem;">
@@ -207,33 +224,33 @@
                         <div class="image-title"style="margin-top:-2.5rem;">Customized Solar Panel Installation</div>
 
                         <img src="assets/img/installation.jpg" alt="Image 1" style="height: 20rem;margin-bottom: 2rem;">
-                        <p class="opportunity__description"style="color:rgb(91, 89, 89);">At our solar panel installation company, we offer specialized solar panel installation services to meet your energy
+                        <p class="opportunity__description">At our solar panel installation company, we offer specialized solar panel installation services to meet your energy
                         needs. Our team of professionals will work with you to install customized solar panels that are tailored to your
                         specific energy consumption needs. We pride ourselves on our commitment to providing high-quality solar panel
                         installation services that are both efficient and affordable.</p>
-                        <a href="tel:8805045349" style="color: #63B76C;text-align:center;display: block;margin-top: 1rem;">📞 Call Now
+                        <a href="tel:8805045349" style="color:#0baf13;text-align:center;display: block;margin-top: 1rem;">📞 Call Now
                         </a>
                     </div>
                     <div class="opportunity">
                         <div class="image-title"style="margin-top:-2.5rem;">Solar Maintenance and Repair</div>
 
                         <img src="assets/img/service.jpg" alt="Image 2" style="height: 20rem;margin-bottom: 2rem;">
-                        <p class="opportunity__description" style="color:rgb(91, 89, 89);">At our solar energy company, we offer comprehensive solar panel maintenance and repair services to ensure that your
+                        <p class="opportunity__description">At our solar energy company, we offer comprehensive solar panel maintenance and repair services to ensure that your
                         solar panel system continues to operate at peak efficiency. Our team of experienced solar panel technicians is dedicated
                         to providing prompt and professional solar panel repair services, including panel cleaning, troubleshooting, and part
                         replacement.</p>
-                        <a href="tel:8805045349" style="color: #63B76C;text-align: center;display: block;margin-top: 1rem;">📞 Call Now
+                        <a href="tel:8805045349" style="color:#0baf13;text-align: center;display: block;margin-top: 1rem;">📞 Call Now
                         </a>
                     </div>
                     <div class="opportunity">
                         <div class="image-title"style="margin-top:-2.5rem;">Solar Energy Consultation</div>
 
                         <img src="assets/img/consult.jpg" alt="Image 3" style="height: 20rem;margin-bottom: 2rem;">
-                        <div class="opportunity__description" style="color:rgb(91, 89, 89); ">At our solar energy company, we offer expert solar energy consultation services to help you determine the best solar
+                        <div class="opportunity__description">At our solar energy company, we offer expert solar energy consultation services to help you determine the best solar
                         energy solutions for your home or business. Our team of experienced solar energy professionals will work with you to
                         evaluate your property, assess your energy needs, and provide you with a customized solar energy plan that meets your
                         unique energy requirements.</div>
-                        <a href="tel:8805045349" style="color: #63B76C;text-align:center;display: block;margin-top: 1rem;">📞 Call Now
+                        <a href="tel:8805045349" style="color:#0baf13;text-align:center;display: block;margin-top: 1rem;">📞 Call Now
                         </a>
                 </div>
             </div>
@@ -241,9 +258,9 @@
 
         
 
-       <section id="projects" class="w-105 slider-container">
+       <section  class="w-105 slider-container" id="projects" style="margin-top: -6rem;">
                     <h2 class="works__title"
-                        style="color: #63B76C;margin-bottom: 4rem;text-align:center;margin-top: -5rem;">Our Projects
+                        style="color:#f7f7f7;margin-bottom: 4rem;text-align:center;">Our Projects
                     </h2>
 
         <div class="">
@@ -325,11 +342,11 @@
             showSlide(currentSlide);
         </script>
        </section>
-<section class="how-is-works w-120" id="about">
+<section class="how-is-works w-105" id="about" style="margin-top: .4rem;">
     <div class="works__content">
         <div class="works__head">
             <h2 class="works__title" style="margin-bottom: 4rem;">About Us</h2>
-            <p class="works__content w-105">At Sunarc Power, we are a leading solar energy installation company based in Pune,Maharashtra,
+            <p class="works__content w-105" style="color: #263238;">At Sunarc Power, we are a leading solar energy installation company based in Pune,Maharashtra,
                 India and established in 2018. With our expertise and commitment to
                 sustainability, we strive to provide high-quality solar solutions to our clients. Our team of skilled
                 professionals
@@ -359,14 +376,14 @@
 </div>
  
   
-<div style=" background-color: #66BB6A;padding-bottom: 2rem;"><a href="tel:8805045349" class="btn btn__signin">Call</a>
+<div style="padding-bottom:0remm;margin-top: 2rem;"><a href="tel:8805045349" class="btn btn__signin">Call</a>
 <a href="https://wa.me/8805045349" class="btn btn__signin">WhatsApp</a></div>
 
         </section>
 
         <footer class="footer " style="align-items: center;display: flexbox;">
             <div class="">
-                    <ul style="text-align: center;margin-bottom: 1rem;color:#66BB6A;">
+                    <ul style="text-align: center;margin-bottom: 1rem;color:#0baf13">
                             <h4 class="">SUNARC POWER</h4>
                             <a href="#about" class="footer_nav__link">About Us</a>
                             <a href="#services" class="footer_nav__link">Services</a>
@@ -374,13 +391,13 @@
                             <a href="#contact" class="footer_nav__link">Contact</a>
                         
                     </ul>
-                    <ul class="" style="text-align: center;color:#66BB6A;">
+                    <ul class="" style="text-align: center;color:#0baf13">
                     
                         <li class="">
                             <h4 class="">Address</h4>
-                            <p style="color:#607D8B;margin-bottom: 1rem;">F.NO 2,Vrindavan
+                            <p style="color:#263238;margin-bottom: 1rem;">F.NO 2,Vrindavan
                                 Society,Ahriegaon,Warje,<br><span>Pune-411058</span></p></li>
-                    <ul class=""style="text-align: center;margin-bottom:1rem;color:#66BB6A;">
+                    <ul class=""style="text-align: center;margin-bottom:1rem;color:#0baf13">
                         
                             <h4 class="">Social Media</h4>
                     
@@ -392,7 +409,7 @@
                             <a href="#" class=""><img src="assets/img/insta.png" style="height: 3rem;width: 3rem;"></a>
                     </ul>
                     
-                            <p style="color:#f7f7f7;border-bottom: 2px solid;"></p>
+                            <div style="height: 2px;background: linear-gradient(to right, #32d90d, #f36005);"></div>
                         </li>
                     </ul>
                    
@@ -408,7 +425,7 @@
 
 
                 </div>
-                <img src="assets/img/mountain.png" alt="Mountain" class="footer_img">
+                <!-- <img src="assets/img/mountain.png" alt="Mountain" class="footer_img"> -->
             </div>
         </footer>
     </div>
